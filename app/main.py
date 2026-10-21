@@ -9,3 +9,5 @@ def home():
 @app.get("/status")
 def status():
     return {"status": "success", "code": 200}
+from fastapi import FastAPI
+
