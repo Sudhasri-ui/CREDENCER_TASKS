@@ -1,0 +1,8 @@
+venv/
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.vscode/
+id_ed25519
+id_ed25519.pub
