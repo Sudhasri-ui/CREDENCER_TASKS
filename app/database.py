@@ -21,5 +21,10 @@ class ItemModel(Base):
     name = Column(String, index=True)
     description = Column(String, nullable=True)
 
+class UserModel(Base):
+    __tablename__ = "users"
 
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True, nullable=False)
+    hashed_password = Column(String, nullable=False)
 Base.metadata.create_all(bind=engine)
